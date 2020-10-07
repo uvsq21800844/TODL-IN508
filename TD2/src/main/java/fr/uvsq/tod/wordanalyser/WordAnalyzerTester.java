@@ -12,11 +12,17 @@ public class WordAnalyzerTester
 
    public static void test(String s)
    {
-      WordAnalyzer wa = new WordAnalyzer(s);
-      char result = wa.firstRepeatedCharacter();
-      if (result == 0)
+      WordAnalyzer wa=new WordAnalyzer(s);
+      char result=wa.firstRepeatedCharacter();
+
+      if(result==0)
+      {
          System.out.println("No repeated character.");
+      }
+
       else
-         System.out.println("First repeated character = " + result);
+      {
+         System.out.println("First repeated character = "+result);
+      }
    }
 }

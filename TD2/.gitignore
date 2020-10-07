@@ -18,6 +18,3 @@ build
 
 # Ignore IntelliJ files
 .idea/
-
-# Ignore VSCode files
-.vscode/

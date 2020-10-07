@@ -33,9 +33,12 @@ Chaque version que vous créerez devra compiler et passer l’ensemble des tests
 1. Énumérez une liste de cas de tests à réaliser.
     1. un compte créé avec une somme initiale de 100 doit avoir un solde de 100 (**compléter le constructeur et l'accesseur**)
     1. la création d'un compte avec une somme initiale négative doit échouer (**ajouter le test et compléter le constructeur**))
+    1. le crédit d'un compte avec une somme de 100 doit réussir
     1. le crédit d'un compte avec une somme négative doit échouer
+    1. le débit de 100 d'un compte avec un solde de 200 doit réussir
     1. le débit d'un compte avec une somme négative doit échouer
     1. le débit d'un compte d'une somme supérieure au solde de ce compte doit échouer
+    1. le virement de 10 d'un compte d'un solde de 100 vers un autre doit réussir
     1. le virement d'un compte d'une somme supérieure au solde du compte débité doit échouer
 
 2. Pour chaque cas de test identifié ci-dessus,
@@ -59,7 +62,7 @@ La méthode `firstRepeatedCharacter` retourne le 1er caractère répété (adjac
 Le programme [`WordAnalyzerTester`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester.java) vérifie le fonctionnement de cette méthode.
 
 1. Exécuter le programme. Que se passe-t-il ? De quel type d'erreur s'agit-il ? 
-    * RÉPONDRE ICI
+    * Le test "shouldTest" échoue, il y a erreur d'assertion. Le programme n'effectue pas de tests, il va donc falloir les implémenter.
 1. Transformer un par un les tests effectués dans [`WordAnalyzerTester`](src/main/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTester.java) en cas de test JUnit (dans la classe [`WordAnalyzerTest`](src/test/java/fr/uvsq/tod/wordanalyser/WordAnalyzerTest.java)).
     * à chaque fois, corriger la méthode `firstRepeatedCharacter` pour que le test passe
 1. Réexécuter l'ensemble des tests pour vérifier le bon fonctionnement de la méthode. 
